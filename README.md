@@ -1,3 +1,11 @@
+
+## Setup
+
+settings for VSCode
+
+- write `readlink $(which go)` to `go.goroot`
+- write `readlink $(which clang-format)` to `clang-format.executable`
+
 ## Example
 
 ```bash
