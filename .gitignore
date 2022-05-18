@@ -1,0 +1,8 @@
+**/.direnv
+
+# go
+go.work
+
+# VSCode
+.vscode/settings.json
+**/*.code-workspace
