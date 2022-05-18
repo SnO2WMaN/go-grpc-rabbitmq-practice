@@ -7,3 +7,23 @@ packages = [
 	"clang-tools",
 	"grpcurl",
 ]
+
+[[env]]
+name = "RABBITMQ_USERNAME"
+value = "user"
+
+[[env]]
+name = "RABBITMQ_PASSWORD"
+value = "password"
+
+[[env]]
+name = "RABBITMQ_HOST"
+value = "localhost"
+
+[[env]]
+name = "RABBITMQ_PORT"
+value = 5672
+
+[[env]]
+name = "RABBITMQ_URL"
+eval = "amqp://$RABBITMQ_USERNAME:$RABBITMQ_PASSWORD@$RABBITMQ_HOST:$RABBITMQ_PORT"

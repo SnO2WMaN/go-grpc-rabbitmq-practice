@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    environment:
+      RABBITMQ_DEFAULT_USER: $RABBITMQ_USERNAME
+      RABBITMQ_DEFAULT_PASS: $RABBITMQ_PASSWORD
+    ports:
+      - published: $RABBITMQ_PORT
+        target: 5672
+      - published: 15672
+        target: 15672 # Web admin
