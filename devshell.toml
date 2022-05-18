@@ -1,2 +1,9 @@
 [devshell]
-packages = ["go_1_18"]
+packages = [
+	"go_1_18",
+	"grpc-tools",
+	"protoc-gen-go",
+	"protoc-gen-go-grpc",
+	"clang-tools",
+	"grpcurl",
+]
