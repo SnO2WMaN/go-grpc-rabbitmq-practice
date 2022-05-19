@@ -6,6 +6,7 @@ option go_package = "github.com/sno2wman/go-rabbitmq-grpc-practice/manager/sayhe
 
 service Greeter {
   rpc SayHello(HelloRequest) returns (HelloReply) {}
+  rpc UpdateFeed(UpdateFeedRequest) returns (UpdateFeedResponse) {}
 }
 
 message HelloRequest {
@@ -14,4 +15,12 @@ message HelloRequest {
 
 message HelloReply {
   string message = 1;
+}
+
+message UpdateFeedRequest {
+  string feed_id = 1;
+}
+
+message UpdateFeedResponse {
+  bool ok = 1;
 }
